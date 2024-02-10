@@ -1,0 +1,11 @@
+.blog-link {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    color: rgb(177, 168, 168);
+
+}
+.blinks {
+    display: flex;
+    flex-direction: column;
+   
+}

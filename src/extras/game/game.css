@@ -1,0 +1,48 @@
+.gamebox {
+    position: absolute;
+    top: 10%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  
+}
+
+.blurred-card {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    backdrop-filter: blur(10px); /* Apply a blur effect to the card */
+  }
+
+  .record {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game {
+    margin-right: 1rem;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+ .cancel {
+  position: absolute;
+  right: 15px;
+  font-size: .8rem;
+  font-weight: 700;
+  top: 5px;
+  cursor: pointer;
+ }
+
+ @media screen and (max-width: 690px) {
+  
+ }
