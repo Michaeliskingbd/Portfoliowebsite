@@ -34,7 +34,7 @@ const Portfolio = () => {
             </div>
             <h3>Artis</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://artis-co.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
@@ -45,7 +45,7 @@ const Portfolio = () => {
             </div>
             <h3>Real Estate website</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://hlistng-michael-king.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
@@ -56,7 +56,7 @@ const Portfolio = () => {
             </div>
             <h3>Netflix clone</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://netflix-clone-michaelking.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>

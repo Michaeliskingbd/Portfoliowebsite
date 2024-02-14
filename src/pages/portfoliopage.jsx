@@ -33,7 +33,7 @@ const PortfolioPage = () => {
             </div>
             <h3>Artis</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://artis-co.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
@@ -44,7 +44,7 @@ const PortfolioPage = () => {
             </div>
             <h3>Real Estate website</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://hlistng-michael-king.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
@@ -55,8 +55,19 @@ const PortfolioPage = () => {
             </div>
             <h3>Netflix clone</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://netflix-clone-michaelking.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image'>
+                <img src={IMG2} alt=''/>
+            </div>
+            <h3>Financial Portfolio App</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com/Michaeliskingbd/FPAfrontend/tree/main' className='btn' target='_blank'>Github</a>
+            <a href='https://financialprofileapp.onrender.com/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
 
@@ -66,7 +77,7 @@ const PortfolioPage = () => {
             </div>
             <h3>E- commerce</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
@@ -77,7 +88,7 @@ const PortfolioPage = () => {
             </div>
             <h3>Calculator</h3>
             <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn' target='_blank'>Github</a>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://king-calculator.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
         </article>
