@@ -39,6 +39,17 @@ const Portfolio = () => {
             </div>
           </article>
 
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image  netflix'>
+                <img src={IMG3} alt=''/>
+            </div>
+            <h3>Ecommerce website</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com/Michaeliskingbd/shoppify' className='btn' target='_blank'>Github</a>
+            <a href='https://shoppify-one.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
           <article className='portfolio__item'>
             <div data-aos="fade-up" className='portfolio__item-image'>
                 <img  src={IMG1} alt=''/>
@@ -50,16 +61,7 @@ const Portfolio = () => {
             </div>
           </article>
 
-          <article  className='portfolio__item'>
-            <div data-aos="fade-right" className='portfolio__item-image  netflix'>
-                <img src={IMG3} alt=''/>
-            </div>
-            <h3>Netflix clone</h3>
-            <div className='portfolio__item-cta'>
-            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
-            <a href='https://netflix-clone-michaelking.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </article>
+          
         </div>
 
         <a href='portfoliopage' className='btn view' >View all projects</a>
