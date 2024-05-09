@@ -5,7 +5,7 @@ import IMG2 from '../assets/portfolio2.jpg'
 import IMG3 from '../assets/n4.png'
 import IMG4 from '../assets/calculator.png'
 import IMG5 from '../assets/portfolio5.png'
-import IMG6 from '../assets/portfolio6.jpg'
+import IMG6 from '../assets/Snapshot_modernloginpage.png'
 
 
 
@@ -70,6 +70,18 @@ const PortfolioPage = () => {
             <a href='https://netflix-clone-michaelking.vercel.app' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
+
+          <article  className='portfolio__item'>
+            <div data-aos="fade-right" className='portfolio__item-image'>
+                <img src={IMG6} alt=''/>
+            </div>
+            <h3>Modern Login-page(Next.js)</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com/Michaeliskingbd/Next.js-login-page/tree/main' className='btn' target='_blank'>Github</a>
+            <a href='https://next-js-login-page.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
 
           <article  className='portfolio__item'>
             <div data-aos="fade-right" className='portfolio__item-image'>
