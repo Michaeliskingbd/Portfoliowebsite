@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import { Button, Modal } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import data from '../extras/facts/data';
+import sound1 from "../assets/pageturn.mp3";
 
 const LandingPage = () => {
     const [userInput, setUserInput] = useState('');
@@ -41,7 +42,9 @@ const LandingPage = () => {
 
  
       const getRandomFact = () => {
+        const gameOver = new Audio(sound1);
         const randomIndex = Math.floor(Math.random() * data.length);
+        gameOver.play()
         setRandomFact(data[randomIndex]);
       };
  
