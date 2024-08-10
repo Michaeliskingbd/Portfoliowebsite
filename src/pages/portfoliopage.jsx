@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import '../components/portfolio/portfolio.css'
-import IMG1 from '../assets/portfolio1.jpg'
-import IMG2 from '../assets/portfolio2.jpg'
-import IMG3 from '../assets/n4.png'
+import IMG1 from '../assets/zeal.JPG'
+import IMG2 from '../assets/bati.JPG'
+import IMG3 from '../assets/City.JPG'
 import IMG4 from '../assets/calculator.png'
-import IMG5 from '../assets/portfolio5.png'
 import IMG6 from '../assets/Snapshot_modernloginpage.png'
-
+import IMG7 from '../assets/n4.png'
+import IMG8 from '../assets/portfolio2.jpg'
 
 
 import AOS from 'aos';
@@ -29,31 +29,31 @@ const PortfolioPage = () => {
 
         <article className='portfolio__item'>
             <div data-aos="fade-up" className='portfolio__item-image'>
-                <img  src={IMG5} alt=''/>
+                <img  src={IMG1} alt=''/>
             </div>
-            <h3>Artis</h3>
+            <h3>Zealworker</h3>
             <div className='portfolio__item-cta'>
             <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
-            <a href='https://artis-co.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </article>
-
-          <article  className='portfolio__item'>
-            <div data-aos="fade-right" className='portfolio__item-image  netflix'>
-                <img src={IMG3} alt=''/>
-            </div>
-            <h3>Ecommerce website</h3>
-            <div className='portfolio__item-cta'>
-            <a href='https://github.com/Michaeliskingbd/shoppify' className='btn' target='_blank'>Github</a>
-            <a href='https://shoppify-one.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href='https://zeal.zealworkers.com' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
 
           <article className='portfolio__item'>
             <div data-aos="fade-up" className='portfolio__item-image'>
-                <img  src={IMG1} alt=''/>
+                <img  src={IMG2} alt=''/>
             </div>
-            <h3>Real Estate website</h3>
+            <h3>Batikash</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
+            <a href='https://batikash-web.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
+          <article className='portfolio__item'>
+            <div data-aos="fade-up" className='portfolio__item-image'>
+                <img  src={IMG3} alt=''/>
+            </div>
+            <h3>citylight</h3>
             <div className='portfolio__item-cta'>
             <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://hlistng-michael-king.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
@@ -62,7 +62,7 @@ const PortfolioPage = () => {
 
           <article  className='portfolio__item'>
             <div data-aos="fade-right" className='portfolio__item-image  netflix'>
-                <img src={IMG3} alt=''/>
+                <img src={IMG7} alt=''/>
             </div>
             <h3>Netflix clone</h3>
             <div className='portfolio__item-cta'>
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
 
           <article  className='portfolio__item'>
             <div data-aos="fade-right" className='portfolio__item-image'>
-                <img src={IMG2} alt=''/>
+                <img src={IMG8} alt=''/>
             </div>
             <h3>Financial Portfolio App</h3>
             <div className='portfolio__item-cta'>
@@ -109,7 +109,7 @@ const PortfolioPage = () => {
         
         </div>
 
-        <a href='home' className='btn view' >Go back</a>
+        <a style={{display:"flex", justifyContent:"center", alignContent:"center", marginBottom:"3rem"}} href='home' className='btn view' >Go back</a>
     </section>
   )
 }

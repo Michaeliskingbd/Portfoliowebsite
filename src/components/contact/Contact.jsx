@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './contact.css'
 
 import { FaEnvelope, FaWhatsapp,  FaLinkedin} from 'react-icons/fa'
@@ -13,7 +13,7 @@ import { useUserContext } from '../../UserContext';
 
 const Contact = () => {
 
-
+  const [name, setName] =useState("")
   const { user } = useUserContext();
  
 
@@ -63,7 +63,7 @@ const Contact = () => {
         </article>
         </div>
         <form ref = {form} onSubmit={sendEmail} >
-          <input type='text' name='name' placeholder='Your Full Name' required value={user? user.name: ""}/>
+          <input type='text' name='name' placeholder='Your Full Name' required value={user? user.name: name} onChange={(e) => setName(e.target.value)}/>
           <input type='email' name='email' placeholder='Your Email' required/>
           <textarea type='message' name='message' rows='7' placeholder='Your Message' required/>
           <button type='submit' className='btn btn-primary'> Send message </button>

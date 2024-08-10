@@ -1,6 +1,5 @@
-// Options.js
 import React from 'react';
-import "./game.css"
+import "./game.css";
 
 const Options = ({ options, onSelect }) => (
   <div className="options">

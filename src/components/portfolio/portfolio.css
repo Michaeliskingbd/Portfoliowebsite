@@ -43,6 +43,12 @@
 .view {
     margin-left: 45%;
     margin-top: 2rem;
+    background: transparent !important;
+    height: 3.5rem;
+    width: 150px;
+    font-size: 1rem;
+    border-color: #e7900e !important;
+    color: #e7900e !important;
 }
 
 /* media queries (medium screen) */
@@ -62,6 +68,13 @@
     .view {
         margin-left: 26%;
         margin-top: 2rem;
+        background: transparent !important;
+        height: 3.5rem;
+        width: 150px;
+        font-size: 1rem;
+        border-color: #e7900e !important;
+        color: #e7900e !important;
     }
+
     
   }

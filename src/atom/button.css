@@ -1,0 +1,18 @@
+.Mbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: .4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    transition: all ease 1s;
+
+}
+.Mbutton:hover {
+    background-color: white;
+    color: black;
+}

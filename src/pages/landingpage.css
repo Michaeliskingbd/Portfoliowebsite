@@ -1,3 +1,18 @@
+.game-container {
+ margin: auto;
+ position: absolute;
+ top: 20%;
+ background: linear-gradient(135deg, #2e3a4a, #1f2937);
+ padding: 30px;
+ border-radius: 15px;
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+ color: #fff;
+ text-align: center;
+ width: 500px;
+ 
+}
+
+
 .welcomepage {
     display: flex;
     justify-content: center;
@@ -10,7 +25,12 @@
 }
 .gamebox {
     width: 400px;
+   
 } 
+
+.hh {
+    font-size: 1rem;
+}
   
 
 
@@ -46,14 +66,24 @@
     width: 40%;
     text-align: center;
     color: white;
-    border-color: #e7900e;
+    border-color: white;
+    background-color: var(--color-primary);
 }
 .winput  {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: #e3e3e3;
+  height: 1rem;
+  color: rgb(0, 0, 0);
   font-family: monospace;
-  border-color: white ;
+  border-color: transparent;
 }
+
+.ant {
+    width: 40%;
+    height: 3rem;
+}
+
+
+
 
 @media screen  and (max-width: 1024px) {
 
@@ -117,6 +147,7 @@
         width: 90%;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .x {
@@ -131,6 +162,12 @@
     .gamebox {
         width: 95%;
     } 
+
+    .ant {
+        width: fit-content;
+        height: 2.5rem;
+    }
+
    
     
   } 
