@@ -25,10 +25,7 @@ const GuessingGame = () => {
   const [gameScreen, setGameScreen] = useState(true);
   const [shake, setShake] = useState(false);
 
-
   const generateOptions = () => {
- 
-  
     const newCorrectNumber = Math.floor(Math.random() * 10) + 1;
     setCorrectNumber(newCorrectNumber);
     setBlurredNumber(<p style={{fontSize:"30px", marginBottom:"1rem"}}>&#127829;</p>);
@@ -52,14 +49,11 @@ const GuessingGame = () => {
     setRevealed(true);
   
     setTimeout(() => {
-    
       if (parseInt(selectedOption, 10) === correctNumber) {
-        //alert('Exellent! You guessed the correct number!');
         correctSound.play()
         setScore(score + 10);
         setWrongGuesses(wrongGuesses - 1)
       } else {
-        //alert(`Awkward! The correct number was ${correctNumber}`);
         wrongSound.play()
         setShake(true);
         setTimeout(() => setShake(false), 500);
@@ -67,8 +61,6 @@ const GuessingGame = () => {
       }
 
       if (wrongGuesses === 5) {
-
-       // alert('Game Over! Lifeline used up!');
         setGameScreen(false);
         setTimeout(() => {
           gameOver.play()

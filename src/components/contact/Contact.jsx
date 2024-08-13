@@ -51,7 +51,7 @@ const Contact = () => {
         <article className='contact__option'>
         <a href='#'><FaLinkedin  className='contact__option-icon'/></a>
           <h4>Linkedin</h4>
-          <h5>Michael Aladejyugbe</h5>
+          <h5>Michael Aladejuyigbe</h5>
           <a href='https://www.linkedin.com/in/michael-aladejuyigbe-6490a7288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank'>send a message</a>
         </article>
 
