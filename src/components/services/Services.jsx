@@ -4,7 +4,7 @@ import {FaXingSquare} from "react-icons/fa"
 
 const Services = () => {
   return (
-    <section id='services'>
+    <section data-aos="fade-up" data-aos-duration="3000" id='services'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
 

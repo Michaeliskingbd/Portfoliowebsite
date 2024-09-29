@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import './about.css'
 import ME from '../../assets/ascot1.png'
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaLaptop, FaXingSquare } from 'react-icons/fa';
+import { FaAward } from 'react-icons/fa';
 
 const About = () => {
 
@@ -12,11 +12,11 @@ const About = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="fade-up" data-aos-duration="8000"  id='about'>
+    <section data-aos="fade-up" data-aos-duration="3000"  id='about'>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className='container about__container'>
+      <div data-aos="fade-up" data-aos-duration="3000" className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
             <img src={ME} alt="About Image"/>
@@ -25,23 +25,23 @@ const About = () => {
 
         <div className='about__content'>
           <div data-aos="flip-up" className='about__cards'>
-            {/*<article className='about__card'>
+            <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
               <small>2+ Years</small> 
-             </article>*/}
+             </article>
 
-           {/*<article className='about__card'>
+           <article className='about__card'>
               <FaXingSquare className='about__icon'/>
               <h5>Clients</h5>
-              <small>2+ Worldwide</small> 
-              </article>*/ }
+              <small>10+ Clients Globally</small> 
+              </article>
 
-            {/*<article className='about__card'>
+            <article className='about__card'>
               <FaLaptop className='about__icon'/>
               <h5>Projects</h5>
               <small>Multiple Projects completed</small> 
-            </article>*/}
+            </article>
 
           </div>
           <p> I am an highly motivated software engineering professional with

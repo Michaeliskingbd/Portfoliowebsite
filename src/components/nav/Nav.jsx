@@ -1,6 +1,6 @@
 import React from 'react'
 import './nav.css'
-import {FaAward, FaBook, FaFile, FaHome, FaList, FaUser} from "react-icons/fa"
+import {FaAward, FaBook, FaFile, FaHome, FaUser} from "react-icons/fa"
 import { useState } from 'react'
 
 const Nav = () => {

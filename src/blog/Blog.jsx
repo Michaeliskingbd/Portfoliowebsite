@@ -14,7 +14,7 @@ const Blog = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="fade-up" data-aos-duration="8000"  id='about'>
+    <section data-aos="fade-up" data-aos-duration="3000"  id='about'>
       <h5>Get To read</h5>
       <h2>My Blog</h2>
 

@@ -10,6 +10,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 import Blog from './blog/Blog'
+import { FloatButton } from 'antd'
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
         {/*<Testimonial/>*/}
         <Contact/>
         <Footer/>
+        <FloatButton.BackTop />
     </div>
   )
 }

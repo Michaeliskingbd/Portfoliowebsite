@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-float-btn-default .ant-float-btn-body {
+  background-color: teal;
+
+}
+
+

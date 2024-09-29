@@ -5,10 +5,15 @@ import GuessingGame from '../extras/game/Game';
 import RandomFact from '../extras/facts/RandomFacts';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Button, Modal } from 'antd';
+import { Button, Modal, Input, Spin } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import data from '../extras/facts/data';
 import sound1 from "../assets/pageturn.mp3";
+import { AudioOutlined } from '@ant-design/icons';
+import whatimage from "../assets/what.png";
+import { FloatButton } from 'antd';
+import { IoGameControllerOutline } from "react-icons/io5";
+import music from "../assets/birds.mp3"
 
 const LandingPage = () => {
     const [userInput, setUserInput] = useState('');
@@ -26,28 +31,36 @@ const LandingPage = () => {
     const playFact = () => setShowFact(!showFact);
     const handleInputChange = (e) => setUserInput(e.target.value);
 
+    const loginmusic = new Audio(music);
+
     const handleGetMeIn = () => {
+        loginmusic.play(); // Start playing the music
+      
         setLoading(true);
+        
+        // After 10 seconds, stop the music and navigate to home
         setTimeout(() => {
-            navigate('/home');
-            setLoading(false);
-        }, 5000);
+          loginmusic.pause(); // Stop the music
+          loginmusic.currentTime = 0; // Reset the music to the beginning
+          navigate('/home');
+          setLoading(false);
+        }, 10000);
+      
         updateUser({ name: userInput });
-    };
+      };
+      
 
     const startGame = () => {
         setGameStarted(true);
         setRule(!rule);
     };
 
- 
-      const getRandomFact = () => {
+    const getRandomFact = () => {
         const gameOver = new Audio(sound1);
         const randomIndex = Math.floor(Math.random() * data.length);
-        gameOver.play()
+        gameOver.play();
         setRandomFact(data[randomIndex]);
-      };
- 
+    };
 
     useEffect(() => {
         AOS.init();
@@ -63,51 +76,70 @@ const LandingPage = () => {
     };
     const handleCancel = () => setOpen(false);
 
-    return (
-        <div className='welcomepage'>
-            <form className='welcome'>
-                <div className='display'>
-                    <h2 className='hh'>Welcome, {userInput.trim() !== '' ? userInput : 'Visitor!'}</h2>
-                </div>
-                <div className='extras'>
-                <Button className='ant'
-                    data-aos="fade-right" data-aos-duration="4000"
-                    key="link"
-                    type="dashed"
-                    loading={loading}
-                    onClick={showModal}
-                    >Random Fun Facts
-                </Button>
+    // Text-to-Speech Function
+    const speakText = (text) => {
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);
+        } else {
+            alert('Sorry, your browser does not support text-to-speech.');
+        }
+    };
 
-                <Button className='ant'
-                    data-aos="fade-left" data-aos-duration="4000"
-                    key="link"
-                    type="dashed"
-                    loading={loading}
-                    onClick={playGame}
-                    >Play a Guessing Game
-                </Button>
-                
+    const { Search } = Input;
+    
+    // Modified suffix with onClick for text-to-speech
+    const suffix = (
+        <span onClick={() => speakText(userInput)}>
+            <AudioOutlined data-aos="fade-left"
+                style={{
+                    fontSize: 16,
+                    color: '#1677ff',
+                    cursor: 'pointer' 
+                }}
+            />
+        </span>
+    );
+ 
+
+    return (
+        <>
+            <section className='imp-welcomepage'>
+                <div className='imp-content'>
+                    <h1 data-aos="fade-left" data-aos-duration="2000" >What's Your Name?</h1>
+                    <Search className='imp-input'
+                        placeholder="input search text"
+                        enterButton={loading ? <Spin/> : "Proceed"}
+                        size="large"
+                        suffix={suffix}
+                        onSearch={handleGetMeIn}
+                        value={userInput} 
+                        onChange={handleInputChange}
+                    />
                 </div>
-                <input className='winput' type='text' placeholder='Please enter your name...' value={userInput} onChange={handleInputChange} />
-                <Button style={{padding: "1.5rem 3rem"}} 
-                    key="link"
+                <div className='imp-image'>
+                    <img data-aos="fade-right" data-aos-duration="2000" src={whatimage} alt="What is your name?" />
+                </div>
+               
+                <FloatButton.Group
+                    trigger="hover"
                     type="primary"
-                    loading={loading}
-                    onClick={handleGetMeIn}
-                    >Get me in
-                </Button>
-            </form>
+                    style={{ insetInlineEnd: 50 }}
+                    icon={<IoGameControllerOutline />}
+                >
+                    <FloatButton onClick={showModal} />
+                    <FloatButton icon={<IoGameControllerOutline />} onClick={playGame} />
+                </FloatButton.Group>
+              
+            </section>
 
             <Modal open={open} title="Random Fun Facts" onOk={handleOk} onCancel={handleCancel} footer={[
-              <Button onClick={getRandomFact}>Next</Button>
+                <Button key="next" onClick={getRandomFact}>Next</Button>
             ]}>
-                <RandomFact randomFact={randomFact} getRandomFact={getRandomFact}/>
-                
+                <RandomFact randomFact={randomFact} getRandomFact={getRandomFact} />
             </Modal>
 
-            <Modal  open={showGame} onOk={handleOk} onCancel={playGame} footer={null}>
-              
+            <Modal open={showGame} onOk={handleOk} onCancel={playGame} footer={null}>
                 {rule && (
                     <p style={{ fontSize: ".9rem" }}>
                         <strong>Rules:</strong><br />
@@ -120,7 +152,7 @@ const LandingPage = () => {
                     <Button type='primary' style={{marginTop:"1rem"}} onClick={startGame}>Start Game</Button>
                 )}
             </Modal>
-        </div>
+        </>
     );
 };
 

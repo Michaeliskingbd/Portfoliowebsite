@@ -29,7 +29,7 @@ const Portfolio = () => {
   }, [])
  
   return (
-    <section
+    <section data-aos="fade-up" data-aos-duration="3000"
  
     id='portfolio'>
         <h5>My Recent Work</h5>

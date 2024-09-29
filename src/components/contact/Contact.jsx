@@ -35,11 +35,11 @@ const Contact = () => {
     AOS.init();
   }, [])
   return (
-    <section data-aos="fade-up" id='contact'>
+    <section data-aos="fade-up" data-aos-duration="3000" id='contact'>
       <h5>Get in Touch</h5>
       <h2>Contact me</h2>
 
-      <div className='container contact__container'>
+      <div data-aos="fade-up" data-aos-duration="3000" className='container contact__container'>
         <div className='contact__options'>
         <article className='contact__option'>
         <a href='#'><FaEnvelope  className='contact__option-icon'/></a>
