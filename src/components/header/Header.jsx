@@ -17,7 +17,7 @@ const Header = () => {
 
   const openNotification = () => {
     api.info({
-      message: `Dear ${user ? user.name : "Visitor"}`,
+      message: `Hello ${user ? user.name : "Visitor"}`,
       description: (
         <>
           Please note that this site is still under construction. Thank you! <FontAwesomeIcon icon={faFaceSmile} />
