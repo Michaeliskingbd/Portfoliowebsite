@@ -32,8 +32,8 @@
 }
 
 .about__card {
-    background: teal;
-    border: 1px solid transparent;
+    background: transparent;
+    border: 1px solid var(--color-primary);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -47,7 +47,7 @@
 }
 
 .about__icon {
-    color: #e7900e;
+    color: var(--color-primary);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }

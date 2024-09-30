@@ -15,6 +15,7 @@ import ai from "../assets/adobe-illustrator-cc-icon.svg"
 import mui from "../assets/material-ui-1.svg"
 import tailwind from "../assets/tailwindcss.svg"
 import express from "../assets/express-109.svg"
+import native from "../assets/react-native-1.svg"
 
 
 const Skills = () => {
@@ -25,6 +26,7 @@ const Skills = () => {
         <article className='skill'> <img src={css} alt='jav'/>CSS</article>
         <article className='skill'> <img src={Jav} alt='jav'/> Javascript</article>
         <article className='skill'> <img src={react} alt='jav'/>  ReactJS</article>
+        <article className='skill'> <img src={native} alt='jav'/>  ReactNative</article>
         <article className='skill'> <img src={node} alt='jav'/> NodeJS</article>
         <article className='skill'> <img style={{width:"80px"}} src={express} alt='jav'/>  ExpressJS</article>
         <article className='skill'> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt='jav'/>  NextJS</article>
