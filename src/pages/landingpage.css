@@ -20,7 +20,7 @@
     
 }
 
-.ant-input-search :where(.css-dev-only-do-not-override-d2lrxs).ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+.ant-input-search.ant-input-group .ant-input-affix-wrapper:not(:last-child) {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     height: 45px;
