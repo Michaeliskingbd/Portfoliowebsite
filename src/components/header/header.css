@@ -190,12 +190,8 @@ header {
         gap: 1rem;
         margin-left: 1.5rem;
        
-      
-       
     }
-    .cta a {
-        border: 1px solid #e7900e !important; 
-    }
+  
     .header__container {
         text-align: center;
         height: fit-content;
