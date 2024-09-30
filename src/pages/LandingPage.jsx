@@ -108,7 +108,7 @@ const LandingPage = () => {
                 <div className='imp-content'>
                     <h1 data-aos="fade-left" data-aos-duration="2000" >What's Your Name?</h1>
                     <Search className='imp-input'
-                        placeholder="input search text"
+                        placeholder="Enter your name"
                         enterButton={loading ? <Spin/> : "Proceed"}
                         size="large"
                         suffix={suffix}

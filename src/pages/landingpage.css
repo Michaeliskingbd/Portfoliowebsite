@@ -24,6 +24,7 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     height: 45px;
+   
   
 }
 .ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
@@ -33,8 +34,12 @@
     width: 80px;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-   
+    
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-input-group >.ant-input-affix-wrapper:not(:last-child) .ant-input {
+    text-indent: .5rem;
+    font-weight: 500;
+    color: #1f2937;
 }
 
 
@@ -230,12 +235,16 @@
         padding: 0px 20px;
         margin: 0px;
         line-height: 30px;
+        gap: 10px;
         
     }
     .imp-content {
         align-items: center;
         justify-content: center;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
      
     }
     .imp-input {
