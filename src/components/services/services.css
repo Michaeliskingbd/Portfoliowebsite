@@ -7,25 +7,26 @@
 .service {
     background: transparent;
     border-radius: 0 0 2rem 2rem;
-    border: 1px solid var(--color-primary);
+    border: 1px solid none ;
     height: fit-content;
     transition: var(--transition);
+    color: var(--color-light);
 }
 .service:hover {
     background: transparent;
-    border-color:#e7900e;
+    border-color: var(--color-bg);
     cursor: default;
 }
 
 .service__head {
-    background: #e7900e;
+    background: var(--color-bg);
     padding: 2rem;
     border-radius: 0 0 2rem 2rem;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service__head h3 {
-    color: var(--color-bg);
+    color: white;
     font-size: 1rem;
     text-align: center;
 }

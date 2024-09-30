@@ -193,6 +193,9 @@ header {
       
        
     }
+    .cta a {
+        border: 1px solid #e7900e !important; 
+    }
     .header__container {
         text-align: center;
         height: fit-content;

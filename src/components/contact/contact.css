@@ -12,7 +12,7 @@
 }
 
 .contact__option {
-    background: teal;
+    background: #3498DB;
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -22,19 +22,20 @@
 
 .contact__option:hover {
     background: transparent;
-    border-color:#e7900e;
+    border-color:#3498DB;
 }
 
 .contact__option-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #e7900e;
+    color: var(--color-light);
 }
 
 .contact__option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+    color: var(--color-light);
 }
 
 /* =========== FORM ============== */
@@ -50,7 +51,7 @@ input, textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid teal;
+    border: 2px solid #3498DB;
     resize: none;
     color: var(--color-white);
 }
