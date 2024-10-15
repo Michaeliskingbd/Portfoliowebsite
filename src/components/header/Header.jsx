@@ -33,11 +33,19 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      openNotification();
-    }, 3000); 
+    // Check if the notification has already been shown
+    const notificationShown = localStorage.getItem('notificationShown');
 
-    return () => clearTimeout(timeoutId);
+    if (!notificationShown) {
+      // Show notification only if it hasn't been shown before
+      const timeoutId = setTimeout(() => {
+        openNotification();
+        // Store in localStorage that the notification has been shown
+        localStorage.setItem('notificationShown', 'true');
+      }, 3000); 
+
+      return () => clearTimeout(timeoutId);
+    }
   }, [user]);
 
   useEffect(() => {

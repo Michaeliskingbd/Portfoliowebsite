@@ -20,7 +20,7 @@ const Portfolio = () => {
     setTimeout(() => {
       navigate('/portfoliopage')
       setLoading(false);
-  }, 5000);
+  }, 3000);
 
   }
 

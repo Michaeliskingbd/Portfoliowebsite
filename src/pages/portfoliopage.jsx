@@ -7,10 +7,12 @@ import IMG4 from '../assets/calculator.png'
 import IMG6 from '../assets/Snapshot_modernloginpage.png'
 import IMG7 from '../assets/n4.png'
 import IMG8 from '../assets/portfolio2.jpg'
+import IMG9 from '../assets/ai.jpg'
 
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom'
 
 
 const PortfolioPage = () => {
@@ -18,6 +20,10 @@ const PortfolioPage = () => {
   useEffect(() => {
     AOS.init();
   }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top
+  }, []);
  
   return (
     <section
@@ -46,6 +52,17 @@ const PortfolioPage = () => {
             <div className='portfolio__item-cta'>
             <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
             <a href='https://batikash-web.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+            </div>
+          </article>
+
+          <article className='portfolio__item'>
+            <div data-aos="fade-up" className='portfolio__item-image'>
+                <img  src={IMG9} alt=''/>
+            </div>
+            <h3>Ai Voiceover</h3>
+            <div className='portfolio__item-cta'>
+            <a href='https://github.com/Michaeliskingbd' className='btn' target='_blank'>Github</a>
+            <a href='https://ai-voiceover-eight.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
             </div>
           </article>
 
@@ -109,7 +126,7 @@ const PortfolioPage = () => {
         
         </div>
 
-        <a style={{display:"flex", justifyContent:"center", alignContent:"center", marginBottom:"3rem"}} href='home' className='btn view' >Go back</a>
+        <Link style={{display:"flex", justifyContent:"center", alignContent:"center", marginBottom:"3rem"}} to='/home' className='btn view' >Go back</Link>
     </section>
   )
 }
