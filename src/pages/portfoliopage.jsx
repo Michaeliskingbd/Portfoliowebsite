@@ -219,14 +219,14 @@ const PortfolioPage = () => {
             <h3>Project Management app</h3>
             <div className="portfolio__item-cta">
               <a
-                href="https://alphatwelve-inky.vercel.app/"
+                href="https://github.com/Michaeliskingbd"
                 className="btn"
                 target="_blank"
               >
                 Github
               </a>
               <a
-                href="https://shoppify-one.vercel.app/"
+                href="https://alphatwelve-inky.vercel.app/"
                 className="btn btn-primary"
                 target="_blank"
               >
